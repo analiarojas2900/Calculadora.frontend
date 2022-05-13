@@ -11,4 +11,4 @@ Analía Rojas
 
 Para ejecutar la calculadora idealmente ejecutala desde un live Server. Si no, ejecuta el HTML directamente. De cualquier modo funcionará
 <br>
-Debes tener conección a internet
+Debes tener conección a internet para poder ver las imagenes
