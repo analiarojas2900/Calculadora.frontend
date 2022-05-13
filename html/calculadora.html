@@ -57,113 +57,114 @@
             </div>
 
             <section>
-                <div class="container col-5">
-                    <div class="row">
-                        <div class="col">
-                            <input type="text" id="tResultado" class="form-control" readonly>
+               
+                    <div class="container">
+                        <div>
+                            <div>
+                                <input type="text" id="tResultado" class="form-control" readonly>
+                            </div>
                         </div>
-                    </div>
-                    <div class="row p-3">
-                        <div class="col">
-                            <button type="button" class="btn btn-primary p-3">1</button>
+                        <br>
+                        <div class="position-relative">
+                            <div class="btn-toolbar " role="toolbar" aria-label="Toolbar with button groups">
+                                <div class="position-absolute top-0 start-50 translate-middle" role="group" aria-label="First group">
+                                    <button type="button" class="btn btn-primary ">1</button>
+                                    <button type="button" class="btn btn-primary">2</button>
+                                    <button type="button" class="btn btn-primary">3</button>
+                                </div>
+                            </div>
                         </div>
-                        <div class="col">
-                            <button type="button" class="btn btn-primary p-3">2</button>
+                        <br><br>
+
+                        <div class="position-relative">
+                            <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+                                <div class="position-absolute top-0 start-50 translate-middle" role="group" aria-label="First group">
+                                    <button type="button" class="btn btn-primary">4</button>
+                                    <button type="button" class="btn btn-primary">5</button>
+                                    <button type="button" class="btn btn-primary">6</button>
+                                </div>
+                            </div>
                         </div>
-                        <div class="col">
-                            <button type="button" class="btn btn-primary p-3">3</button>
+                        <br><br>
+                        <div class="position-relative">
+                            <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+                                <div class="position-absolute top-0 start-50 translate-middle" role="group" aria-label="First group">
+                                    <button type="button" class="btn btn-primary">7</button>
+                                    <button type="button" class="btn btn-primary">8</button>
+                                    <button type="button" class="btn btn-primary">9</button>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="row p-3">
-                        <div class="col">
-                            <button type="button" class="btn btn-primary p-3">4</button>
+                        <br><br>
+                        <div class="position-relative">
+                            <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+                                <div class="position-absolute top-0 start-50 translate-middle" role="group" aria-label="First group">
+                                    <button type="button" class="btn btn-secondary">+</button>
+                                    <button type="button" class="btn btn-primary">0</button>
+                                    <button type="button" class="btn btn-secondary">-</button>
+                                </div>
+                            </div>
                         </div>
-                        <div class="col">
-                            <button type="button" class="btn btn-primary p-3">5</button>
+                        <br><br>
+                        <div class="position-relative">
+                            <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+                                <div class="position-absolute top-0 start-50 translate-middle" role="group" aria-label="First group">
+                                    <button type="button" class="btn btn-secondary">/</button>
+                                    <button type="button" class="btn btn-primary">c</button>
+                                    <button type="button" class="btn btn-secondary">*</button>
+                                </div>
+                            </div>
                         </div>
-                        <div class="col">
-                            <button type="button" class="btn btn-primary p-3">6</button>
+                        <br><br>
+                        <div class="position-relative" role="toolbar" aria-label="Toolbar with button groups">
+                            <div class="position-absolute top-0 start-50 translate-middle" role="group" aria-label="First group">
+                                <button type="button" class="btn btn-warning">=</button>
+                            </div>
                         </div>
-                    </div>
-                    <div class="row p-3">
-                        <div class="col">
-                            <button type="button" class="btn btn-primary p-3">7</button>
-                        </div>
-                        <div class="col">
-                            <button type="button" class="btn btn-primary p-3">8</button>
-                        </div>
-                        <div class="col">
-                            <button type="button" class="btn btn-primary p-3">9</button>
-                        </div>
-                    </div>
-                    <div class="row p-3">
-                        <div class="col">
-                            <button type="button" class="btn btn-primary p-3">0</button>
-                        </div>
-                        <div class="col">
-                            <button type="button" class="btn btn-warning p-3">Borrar</button>
-                        </div>
-                    </div>
-                    <div class="row p-3">
-                        <div class="col">
-                            <button type="button" class="btn btn-info p-3">+</button>
-                        </div>
-                        <div class="col">
-                            <button type="button" class="btn btn-info p-3">-</button>
-                        </div>
-                        <div class="col">
-                            <button type="button" class="btn btn-info p-3">*</button>
-                        </div>
-                        <div class="col">
-                            <button type="button" este="si" class="btn btn-info p-3">/</button>
-                        </div>
-                    </div>
-                    <div class="row p-3">
-                        <div class="col d-grid">
-                            <button type="button" class="btn btn-secondary p-3">Resultado =</button>
-                        </div>
-                    </div>
-                </div>
+                        <br><br>
+                       
+
+
             </section>
+
+
+            <script defer type="text/javascript">
+                let botones = document.querySelectorAll('.btn');
+
+
+                for (let index = 0; index < botones.length; index++) {
+
+                    let element = botones[index];
+                    element.addEventListener('click', () => {
+                        accion(element.textContent);
+                    })
+
+                }
+            </script>
+
         </div>
 
-        <script defer type="text/javascript">
-            let botones = document.querySelectorAll('.btn');
 
-
-            for (let index = 0; index < botones.length; index++) {
-
-                let element = botones[index];
-                element.addEventListener('click', () => {
-                    accion(element.textContent);
-                })
-
-            }
-        </script>
-
-    </div>
-
-
-    </ul>
-    <p class="text-center text-muted">© Pedro I.|Sergio T.|Analia R. <br>
-        GRUPO STACKOVERFLOW | Año 2022</p>
-    <br>
-
-    </footer>
-    
+        </ul>
+        <p class="text-center text-muted">© Pedro I.|Sergio T.|Analia R. <br>
+            GRUPO STACKOVERFLOW | Año 2022</p>
+        <br>
 
         </footer>
-        
+
+
+        </footer>
+
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
-        </script>
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
         integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous">
-        </script>
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
         integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous">
-        </script>
+    </script>
 </body>
 
 </html>
