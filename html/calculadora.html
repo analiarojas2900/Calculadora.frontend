@@ -1,0 +1,159 @@
+!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOME | CALCULADORA</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        <script defer src="/js/calculadora.js"></script>
+</head>
+<body>
+    <div class="container text-center">
+        <header>
+            <h1 class="display-3">Bienvenidos | <img
+                    src="data:image/png;base64,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"
+                    width="10%">
+                <h1>
+        </header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="calculadora.html">HOME</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+
+                    </ul>
+                    <!--  <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Iphone 12" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Buscar</button>
+                    </form> -->
+                </div>
+            </div>
+        </nav>
+        <br>
+        <P class="fw-bolder fs-3">Bienvenid@ a nuestra calculadora en linea</P>
+
+        <img src="https://www.hola.com/imagenes/estar-bien/20190925149164/ser-calculadora-te-hace-menos-empatica-cs/0-717-866/ser-calculadora-empatica-t.jpg"
+            width="70%" class="img-fluid" alt="...">
+        <br><br>
+
+        <div class="main">
+            <div class="row">
+                <div class="col">
+                    <h4>Calculadora</h4>
+                    <br>
+                </div>
+            </div>
+
+            <section>
+                <div class="row">
+                    <div class="col">
+                        <input type="text" id="tResultado" class="form-control" readonly>
+                    </div>
+                </div>
+                <div class="row p-3">
+                    <div class="col">
+                        <button type="button" class="btn btn-primary p-3">1</button>
+                    </div>
+                    <div class="col">
+                        <button type="button" class="btn btn-primary p-3">2</button>
+                    </div>
+                    <div class="col">
+                        <button type="button" class="btn btn-primary p-3">3</button>
+                    </div>
+                </div>
+                <div class="row p-3">
+                    <div class="col">
+                        <button type="button" class="btn btn-primary p-3">4</button>
+                    </div>
+                    <div class="col">
+                        <button type="button" class="btn btn-primary p-3">5</button>
+                    </div>
+                    <div class="col">
+                        <button type="button" class="btn btn-primary p-3">6</button>
+                    </div>
+                </div>
+                <div class="row p-3">
+                    <div class="col">
+                        <button type="button" class="btn btn-primary p-3">7</button>
+                    </div>
+                    <div class="col">
+                        <button type="button" class="btn btn-primary p-3">8</button>
+                    </div>
+                    <div class="col">
+                        <button type="button" class="btn btn-primary p-3">9</button>
+                    </div>
+                </div>
+                <div class="row p-3">
+                    <div class="col">
+                        <button type="button" class="btn btn-primary p-3">0</button>
+                    </div>
+                    <div class="col">
+                        <button type="button" class="btn btn-warning p-3">Limpiar</button>
+                    </div>
+                </div>
+                <div class="row p-3">
+                    <div class="col">
+                        <button type="button" class="btn btn-info p-3">+</button>
+                    </div>
+                    <div class="col">
+                        <button type="button" class="btn btn-info p-3">-</button>
+                    </div>
+                    <div class="col">
+                        <button type="button" class="btn btn-info p-3">*</button>
+                    </div>
+                    <div class="col">
+                        <button type="button" este="si" class="btn btn-info p-3">/</button>
+                    </div>
+                </div>
+                <div class="row p-3">
+                    <div class="col d-grid">
+                        <button type="button" class="btn btn-secondary p-3">Resultado</button>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <script defer type="text/javascript">
+            let botones = document.querySelectorAll('.btn');
+
+
+            for (let index = 0; index < botones.length; index++) {
+
+                let element = botones[index];
+                element.addEventListener('click', () => {
+                    accion(element.textContent);
+                })
+
+            }
+        </script>
+
+    </div>
+  
+            </ul>
+            <p class="text-center text-muted">© Pedro I.|Sergio T.|Analia R. <br>
+                GRUPO STACKOVERFLOW | Año 2022</p>
+            <br>
+
+        </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+    integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+    integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
